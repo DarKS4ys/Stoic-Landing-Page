@@ -2,7 +2,6 @@
 
 import Pricing from '@/components/Pricing';
 import StoicButton from '@/components/stoicbutton';
-import Features from '@/components/Features';
 import Bottom from '@/components/Bottom';
 import Legal from '@/components/Legal';
 import { Menu } from 'lucide-react';
@@ -14,6 +13,8 @@ import FrequentlyAskedQuestions from '@/components/Faq';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import AI from '@/components/AI';
+import { VscLibrary } from 'react-icons/vsc'
+import Card from '@/components/Features/Card';
 
 export default function Home() {
   //Mobile Navbar Logic
@@ -91,7 +92,15 @@ export default function Home() {
         </div>
       </div>
 
-      <Features />
+      {/* Features */}
+      <div className="flex flex-col justify-center items-center my-44">
+        <h1 className="text-5xl text-center font-medium w-[900px] text-transparent bg-clip-text bg-gradient-to-b from-[#F7F7F8] to-[#C2C3C8] p-1 mb-5">Just what you need</h1>
+        <div className="flex justify-center items-center gap-6">
+          <Card icon={<VscLibrary size={25}/>} heading={"AI Development"} body={"We will conduct a detailed analysis of your present processes to find areas where automation can improve profitability."}/>
+          <Card icon={<VscLibrary size={25}/>} heading={"AI Development"} body={"We will conduct a detailed analysis of your present processes to find areas where automation can improve profitability."}/>
+          <Card icon={<VscLibrary size={25}/>} heading={"AI Development"} body={"We will conduct a detailed analysis of your present processes to find areas where automation can improve profitability."}/>
+        </div>
+      </div>
 
       <Pricing />
 
