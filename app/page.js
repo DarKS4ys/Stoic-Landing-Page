@@ -12,10 +12,9 @@ import { SheetContent } from '@/components/ui/sheet';
 import FrequentlyAskedQuestions from '@/components/Faq';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import AI from '@/components/AI';
 import { VscLibrary } from 'react-icons/vsc'
-import Card from '@/components/Features/Card';
+import Card from '@/components/Card';
 import {PiNavigationArrowFill} from 'react-icons/pi'
 
 export default function Home() {

@@ -1,5 +1,3 @@
-"use client"
-
 export default function Card({icon, heading, body}){
     return(
         <>
