@@ -1,10 +1,11 @@
 import Link from 'next/link'
 
+
 export default function Legal(){
     return (
         <div className="mt-12 items-center flex w-full justify-center border-gray-500 border-t-[1px] text-center py-8">
           <div className="mx-auto flex flex-col">
-            <h1 className="text-6xl mb-8 font-bold pointer">S T O I C</h1>
+            <h1 className="text-6xl mb-8 font-bold pointer-events-none">S T O I C</h1>
             <div className="flex">
               <div className="justify-center items-center text-center flex flex-col w-32 md:w-48 lg:w-60">
                 <h1 className="text-2xl mb-2">Socials</h1>

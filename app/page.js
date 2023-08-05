@@ -1,21 +1,19 @@
 "use client"
 
-import Hero from '@/components/Hero';
 import Pricing from '@/components/Pricing';
 import StoicButton from '@/components/stoicbutton';
 import Features from '@/components/Features';
 import Bottom from '@/components/Bottom';
 import Legal from '@/components/Legal';
-
 import { Menu } from 'lucide-react';
 import { Sheet } from '@/components/ui/sheet';
 import { SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { SheetContent } from '@/components/ui/sheet';
 import FrequentlyAskedQuestions from '@/components/Faq';
-
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import AI from '@/components/AI';
 
 export default function Home() {
   //Mobile Navbar Logic
@@ -79,7 +77,19 @@ export default function Home() {
         </div>
       </div>
       
-      <Hero />
+      {/* Hero */}
+      <div className="flex flex-col justify-center items-center mt-24">
+        <h1 className="text-7xl text-center font-medium w-[900px] text-transparent bg-clip-text bg-gradient-to-b from-[#F7F7F8] to-[#C2C3C8] p-1">The Ultimate tool for content creation</h1>
+        <p className="text-center w-[500px] font-thin my-4">Stoic AI is an extremely powerful platform for content creation and education</p>
+          <AI />
+        <div className="m-10 rounded-3xl bg-[#0c0c0d] border border-[#222226] drop-shadow-lg w-[1200px] h-[600px]">
+          <div className="flex justify-start items-center gap-2 p-6">
+            <div className="bg-[#E96B59] w-3 h-3 rounded-full"/>
+            <div className="bg-[#EFC32A] w-3 h-3 rounded-full"/>
+            <div className="bg-[#60C939] w-3 h-3 rounded-full"/>
+          </div>
+        </div>
+      </div>
 
       <Features />
 

@@ -8,7 +8,7 @@ import { IoSendSharp } from "react-icons/io5";
 const endpoint = "https://www.stack-inference.com/run_deployed_flow?flow_id=64c7d73da8f57e2c44512cba&org=6b6cae8f-e4e9-4484-a46d-e179668f1616";
 const apiKey = "df170389-072f-486c-a2b2-41dd46b4451c";
 
-export default function StoicAI() {
+export default function AI() {
   const [inputText, setInputText] = useState("");
   const [apiResponse, setApiResponse] = useState("");
   const [isLoading, setIsLoading] = useState(false);
