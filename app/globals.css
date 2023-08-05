@@ -6,13 +6,13 @@
   --outline: #222222;
   --gray: #1A1A1A;
   --card: #0E0E0E;
-  --highlight: #2bc40d;
+  --highlight: #55beee;
   --text: white;
 }
 
 body {
   color: white;
-  background-color: #101010;
+  background-color: #0c0c0d;
 }
 
   

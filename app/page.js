@@ -3,8 +3,9 @@
 import Hero from '@/components/Hero';
 import Pricing from '@/components/Pricing';
 import StoicButton from '@/components/stoicbutton';
-import Features from '@/components/features';
+import Features from '@/components/Features';
 import Bottom from '@/components/Bottom';
+import Legal from '@/components/Legal';
 
 import { Menu } from 'lucide-react';
 import { Sheet } from '@/components/ui/sheet';
@@ -80,13 +81,15 @@ export default function Home() {
       
       <Hero />
 
-      <Pricing />
-
       <Features />
+
+      <Pricing />
 
       <FrequentlyAskedQuestions />
 
       <Bottom />
+
+      <Legal />
     </>
   )
 }

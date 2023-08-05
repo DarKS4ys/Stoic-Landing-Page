@@ -48,12 +48,12 @@ export default function StoicAI() {
   };
 
   return (
-    <div className="flex flex-col gap-6 justify-center items-center p-5 w-full md:w-[500px]">
-        <div className="bg-[#1a1a1a] flex justify-center items-center w-full py-4 px-6 rounded-full gap-2">
+    <div className="flexflex-col gap-6 justify-center items-center p-5 w-full md:w-[500px]">
+        <div className="bg-[#0d0d0e] border border-[#1D1D1E] drop-shadow-xl flex justify-center items-center w-full py-4 px-6 rounded-full gap-2">
             <BsStars className="text-[#7c7c7c]" />
             <input
             placeholder="Ask me anything"
-            className="text-black bg-transparent outline-none w-full placeholder:text-[#7c7c7c]"
+            className="text-white bg-transparent outline-none w-full placeholder:text-[#7c7c7c]"
             value={inputText}
             onChange={handleInputChange}
             onKeyPress={handleKeyPress}
@@ -64,7 +64,7 @@ export default function StoicAI() {
         </div>
 
         {isLoading ? (
-            <div className="bg-[var(--text)] rounded-xl py-3 px-4 w-full">
+            <div className="bg-[#0d0d0e] border border-[#1D1D1E] my-5 rounded-xl py-3 px-4 w-full">
             <div className="flex items-center justify-center">
                 <div className="text-white animate-bounce mx-1">.</div>
                 <div className="text-white animate-bounce mx-1">.</div>
@@ -74,7 +74,7 @@ export default function StoicAI() {
         ) : (
             <div
             className={`${
-                apiResponse ? "bg-[var(--text)] w-full text-white" : "hidden"
+                apiResponse ? "bg-[#0d0d0e] border border-[#1D1D1E] my-5 w-full text-white" : "hidden"
             } rounded-xl py-3 px-4 w-[430px]`}
             >
             <h1>{apiResponse}</h1>
