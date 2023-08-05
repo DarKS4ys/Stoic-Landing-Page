@@ -12,9 +12,11 @@ import { SheetContent } from '@/components/ui/sheet';
 import FrequentlyAskedQuestions from '@/components/Faq';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import AI from '@/components/AI';
 import { VscLibrary } from 'react-icons/vsc'
 import Card from '@/components/Features/Card';
+import {PiNavigationArrowFill} from 'react-icons/pi'
 
 export default function Home() {
   //Mobile Navbar Logic
@@ -31,7 +33,10 @@ export default function Home() {
       {/* Navbar */}
       <div className='flex justify-center items-center p-8'>
         <div className='flex justify-between items-center w-[1100px]'>
-          <h1 className='text-lg'>S T O I C</h1>
+          <div className='flex justify-center items-center gap-2'>
+            {/* <Image src='/logo.png' alt="stoic" width={20} height={0} /> */}
+            <h1 className='text-lg pointer-events-none'>S T O I C</h1>
+          </div>
           <div className='md:flex hidden gap-2 text-[#939393]'>
             <button className='hover:bg-white/10 hover:text-white/90 hover:scale-110 rounded-lg transition duration-300 py-2 px-4'>Features</button>
             <button className='hover:bg-white/10 hover:text-white/90 hover:scale-110 rounded-lg transition duration-300 py-2 px-4'>Pricing</button>
@@ -80,10 +85,11 @@ export default function Home() {
       
       {/* Hero */}
       <div className="flex flex-col justify-center items-center mt-24">
-        <h1 className="text-7xl text-center font-medium w-[900px] text-transparent bg-clip-text bg-gradient-to-b from-[#F7F7F8] to-[#C2C3C8] p-1">The Ultimate tool for content creation</h1>
-        <p className="text-center w-[500px] font-thin my-4">Stoic AI is an extremely powerful platform for content creation and education</p>
+        <PiNavigationArrowFill size={30} className='text-yellow-500 rotate-90'/>
+        <h1 className="text-6xl md:text-7xl text-center font-medium md:w-[900px] w-[500px] flex text-transparent bg-clip-text bg-gradient-to-b from-[#F7F7F8] to-[#C2C3C8] p-1">The Ultimate tool for content creation</h1>
+        <p className="text-center w-[350px] md:w-[500px] font-thin my-4">Stoic AI is an extremely powerful platform for content creation and education</p>
           <AI />
-        <div className="m-10 rounded-3xl bg-[#0c0c0d] border border-[#222226] drop-shadow-lg w-[1200px] h-[600px]">
+        <div className="m-10 rounded-3xl bg-[var(--card)] border border-[var(--outline)] drop-shadow-lg w-11/12 md:w-[1200px] h-[600px]">
           <div className="flex justify-start items-center gap-2 p-6">
             <div className="bg-[#E96B59] w-3 h-3 rounded-full"/>
             <div className="bg-[#EFC32A] w-3 h-3 rounded-full"/>
@@ -93,9 +99,10 @@ export default function Home() {
       </div>
 
       {/* Features */}
-      <div className="flex flex-col justify-center items-center my-44">
+      <div className="flex flex-col justify-center items-center my-44 mx-10">
+        <h2 className='font-semibold text-[var(--highlight)] text-2xl'>Features</h2>
         <h1 className="text-5xl text-center font-medium w-[900px] text-transparent bg-clip-text bg-gradient-to-b from-[#F7F7F8] to-[#C2C3C8] p-1 mb-5">Just what you need</h1>
-        <div className="flex justify-center items-center gap-6">
+        <div className="flex md:flex-row flex-col justify-center items-center gap-6">
           <Card icon={<VscLibrary size={25}/>} heading={"AI Development"} body={"We will conduct a detailed analysis of your present processes to find areas where automation can improve profitability."}/>
           <Card icon={<VscLibrary size={25}/>} heading={"AI Development"} body={"We will conduct a detailed analysis of your present processes to find areas where automation can improve profitability."}/>
           <Card icon={<VscLibrary size={25}/>} heading={"AI Development"} body={"We will conduct a detailed analysis of your present processes to find areas where automation can improve profitability."}/>

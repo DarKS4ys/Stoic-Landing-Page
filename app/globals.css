@@ -3,16 +3,18 @@
 @tailwind utilities;
 
 * {
-  --outline: #222222;
+  --outline: #2e2e2e;
   --gray: #1A1A1A;
   --card: #0E0E0E;
   --highlight: #55beee;
   --text: white;
 }
 
-body {
+html,
+body, :root {
   color: white;
   background-color: #0c0c0d;
+  overflow-x: hidden;
 }
 
   

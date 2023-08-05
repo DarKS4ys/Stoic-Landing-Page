@@ -11,7 +11,7 @@ const FreeCard = () => {
 
   return (
     <div>
-      <div className="border border-[--outline] bg-[--card] text-white flex flex-col rounded-3xl p-8  px-16">
+      <div className="border border-[--outline] bg-[var(--card)] text-white flex flex-col rounded-3xl p-8  px-16">
             {/* <div className="absolute justify-end items-end">
                 <div className="flex rounded-full bg-[var(--highlight)] p-1">
                     <p className="font-semibold text-black text-sm">-40%</p>
@@ -34,7 +34,7 @@ const FreeCard = () => {
         <div>
           <div className="flex flex-col justify-start text-stone-200 items-start mb-8">
             {services.map((service) => (
-              <div className="flex items-start justify-start flex-col mb-4">
+              <div key={service} className="flex items-start justify-start flex-col mb-4">
                 <div className="flex flex-row justify-start items-center">
                   <Check className="mr-2 text-[var(--highlight)]" />
                   {service}

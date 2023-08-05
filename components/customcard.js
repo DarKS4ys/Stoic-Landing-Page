@@ -32,14 +32,14 @@ const CustomCard = () => {
         </h1>
         <div className="flex flex-row items-center justify-center mb-8">
           <h1 className="font-semibold text-5xl">
-            €29.<span className="text-lg">99</span>
+            €29<span className="text-lg">.99</span>
             <span className="text-muted-foreground text-sm">/m</span>
           </h1>
         </div>
         <div>
           <div className="flex flex-col justify-start text-white items-start mb-8">
             {services.map((service) => (
-              <div className="flex items-start justify-start flex-col mb-4">
+              <div key={service} className="flex items-start justify-start flex-col mb-4">
                 <div className="flex flex-row justify-start items-center">
                   <Check className="mr-2 text-[var(--highlight)]" />
                   {service}
